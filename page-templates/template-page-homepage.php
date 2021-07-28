@@ -28,20 +28,23 @@ if ($is_tf_blog_page) die();
 <?php
 
 // Check rows exists.
-if( have_rows('three_boxes') ): ?>
+if( have_rows('three_boxes') ): 
+$count = 0;
+    ?>
 
 <div class="boxrow clearfix">
 <?php
     // Loop through rows.
     while( have_rows('three_boxes') ) : the_row();
 
+        $count = $count + 1;
         // Load sub field value.
         $img = get_sub_field('img');
         $title = get_sub_field('title');
         $description = get_sub_field('description');
         $link = get_sub_field('link');
 ?>
-<div class="box box_1">
+<div class="box box_<?php echo $count; ?>">
     <div class="box_content">
       <div class="box_thumb"><img src="<?php echo esc_url($img['url']); ?>" width="240" height="190" alt=""></div>
       <h3><?php echo $title; ?></h3>
