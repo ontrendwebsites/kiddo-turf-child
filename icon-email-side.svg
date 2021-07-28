@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 141.7 118.7" style="enable-background:new 0 0 141.7 118.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_2_);}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:none;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="83.11" y1="0.6937" x2="83.11" y2="142.2337" gradientTransform="matrix(0 1 -1 0 142.5637 -23.965)">
+	<stop  offset="0" style="stop-color:#636363"/>
+	<stop  offset="1" style="stop-color:#414141"/>
+</linearGradient>
+<polygon id="XMLID_27_" class="st0" points="0.3,118.7 31.2,59.1 0.3,-0.4 141.9,-0.4 141.9,118.7 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="53.3" y="28.4" width="61.5" height="61.5"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="Messages" class="st1">
+		<rect id="Rectangle_117" x="53.3" y="28.4" class="st2" width="61.5" height="61.5"/>
+		<path id="Path_50" class="st3" d="M107.1,43.8H61L84.1,63L107.1,43.8z M53.3,43.8c0-4.2,3.4-7.7,7.7-7.7h46.1
+			c4.2,0,7.7,3.4,7.7,7.7v30.8c0,4.2-3.4,7.7-7.7,7.7H61c-4.2,0-7.7-3.4-7.7-7.7V43.8z"/>
+	</g>
+</g>
+</svg>
