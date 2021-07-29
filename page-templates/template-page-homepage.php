@@ -76,10 +76,45 @@ if ($is_tf_blog_page) die();
     <a href="http://localhost:8888/welcometomusic/wp-content/uploads/2020/05/wtm_catalogue_180715_web.pdf" class="btn_custom" hidefocus="true" target="_blank" style="outline: none; opacity: 1;"><strong>Download our resource catalogue</strong></a>
   </div>
 </div>
-<div class="o-grid o-grid--1-column">
-  <div class="bottom_boxes">
-  [latest_post]
-  [testimonials]
+
+<div class="o-grid o-grid--2-column grid-gap-1em">
+  <div class="weird-box weird-box-1 box_circle_date">
+    <div class="ribbon"><p class="ribbon-text">News of the week</p></div>
+    
+    <div class="o-grid grid-weird-box">
+      <div></div>
+      <div>
+        <?php 
+        // Define our WP Query Parameters
+        $the_query = new WP_Query( 'posts_per_page=1' );
+
+        // Start our WP Query
+        while ($the_query -> have_posts()) : $the_query -> the_post(); 
+        // Display the Post Title with Hyperlink
+        ?>
+        <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
+        <p>
+          <?php 
+          // Display the Post Excerpt
+          $content = get_the_content(); echo mb_strimwidth($content, 0, 100, '...');
+          ?>
+        </p>
+        <a class="link-more" href="<?php the_permalink() ?>">Read article</a>
+        <?php 
+        // Repeat the process and reset once it hits the limit
+        endwhile; wp_reset_postdata(); ?>
+      </div>
+    </div>
+  </div>
+  <div class="weird-box weird-box-2 box_circle_photo">
+    <div class="ribbon"><span></span><img src="https://welcometomusic.net/wp-content/uploads/2018/06/s-and-p-01-crop.jpg" alt="" width="103" height="103"></div>
+    <div class="o-grid grid-weird-box">
+      <div></div>
+      <div class="box_content">
+        <p>“The Welcome to Music Program delivered at our Country Areas Program teachers’ workshop was outstanding. Our teachers gained practical and valuable knowledge and skills which were easily transferred to the classroom. I would highly recommend this program for all preschool to primary teachers who are looking to enhance their music program. We look forward to working with Phil in future Northern CAP initiatives.”</p>
+        <p><span class="author">− Shelli Morse, CAP Consultant</span></p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -121,7 +156,6 @@ if ($is_tf_blog_page) die();
 
 
 
-        <p>where are we?</p>
         <div class="content">
             <div class="boxrow clearfix">
                 <?php 
@@ -131,7 +165,6 @@ if ($is_tf_blog_page) die();
                          break;
                      endwhile; 
                  ?>
-                 <p>where is this?</p>
             </div>
             <?php tfuse_comments(); ?>
         </div>
@@ -140,7 +173,7 @@ if ($is_tf_blog_page) die();
                 <?php get_sidebar(); ?>
             </div><!--/ .sidebar -->
         <?php endif; ?>
-        <?php //tfuse_shortcode_content('after'); ?>
+        <?php tfuse_shortcode_content('after'); ?>
         <div id="bottom_bee"></div>  
     </div>
 </div>

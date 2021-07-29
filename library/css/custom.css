@@ -33,6 +33,7 @@
 
 .container .c-box-white--update {
   top: auto;
+  margin-bottom: 2rem;
 }
 
 .video-links {
@@ -43,6 +44,68 @@
 .video-links a {
   margin: 1rem auto;
   padding: 0 2rem;
+}
+
+.container .big_button_box--no-bg .btn_custom {
+  font-size: 1.5em;
+}
+
+.weird-box {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 15px;
+  position: relative;
+}
+.weird-box.box_circle_date .ribbon {
+  width: 141px;
+  height: 177px;
+  position: absolute;
+  top: -3px;
+  left: 24px;
+  z-index: 2;
+  text-align: center;
+}
+.weird-box.box_circle_date .ribbon .ribbon-text {
+  width: 6ch;
+  color: #fff;
+  margin: 3.3em auto 0;
+  font-size: 1.1rem;
+  line-height: 100%;
+}
+.weird-box.box_circle_photo .ribbon {
+  width: 141px;
+  height: 177px;
+  position: absolute;
+  top: -3px;
+  left: 24px;
+  z-index: 2;
+  text-align: center;
+}
+.weird-box.box_circle_photo .box_content {
+  margin: 0;
+}
+.weird-box h3 {
+  margin: 0.5em 0;
+  font-size: 1.6rem;
+}
+.weird-box .link-more {
+  font-size: 1.3rem;
+  color: #3db0d3;
+}
+.weird-box .link-more:hover {
+  color: #f86625;
+}
+
+.grid-weird-box {
+  grid-template-columns: 0.65fr 1fr;
+}
+
+.grid-gap-1em {
+  grid-gap: 1em;
+}
+
+.grid-gap-2em {
+  grid-gap: 2em;
 }
 
 /*# sourceMappingURL=custom.css.map */
