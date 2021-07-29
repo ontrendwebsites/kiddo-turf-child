@@ -1,3 +1,31 @@
+.grid {
+  display: grid;
+}
+@media (min-width: 766px) {
+  .grid.grid-three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.boxrow .box {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: auto;
+}
+@media (max-width: 765px) {
+  .boxrow .box {
+    max-width: 300px;
+    padding-bottom: 2rem;
+  }
+  .boxrow .box .box-content {
+    background-image: none;
+  }
+  .boxrow .box .box-content .box_thumb {
+    width: auto;
+  }
+}
+
 .box_3 .box_content {
   background: url(../../../kiddo-turf-parent/images/box_sprite.png) -313px -98px no-repeat #fff !important;
   background-position: -626px -98px !important;

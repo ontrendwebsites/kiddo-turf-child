@@ -32,7 +32,7 @@ if( have_rows('three_boxes') ):
 $count = 0;
     ?>
 
-<div class="boxrow clearfix">
+<div class="boxrow grid grid-three-columns">
 <?php
     // Loop through rows.
     while( have_rows('three_boxes') ) : the_row();
@@ -51,7 +51,7 @@ $count = 0;
       <p><?php echo $description; ?></p>
     </div>
     <?php if( $link ) { ?>
-    <div class="box_bot">
+    <div>
       <a href="<?php echo $link; ?>" class="btn"><span>Learn More</span></a>
     </div>
 <?php } ?>
