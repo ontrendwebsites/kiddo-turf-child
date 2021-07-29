@@ -31,4 +31,18 @@
   background-position: -626px -98px !important;
 }
 
+.container .c-box-white--update {
+  top: auto;
+}
+
+.video-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-links a {
+  margin: 1rem auto;
+  padding: 0 2rem;
+}
+
 /*# sourceMappingURL=custom.css.map */
