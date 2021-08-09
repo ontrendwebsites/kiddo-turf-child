@@ -26,6 +26,11 @@
   }
 }
 
+.box_1 .box_content {
+  background-position: 0 -101px !important;
+  background-size: 960px !important;
+}
+
 .box_3 .box_content {
   background: url(../../../kiddo-turf-parent/images/box_sprite.png) -313px -98px no-repeat #fff !important;
   background-position: -626px -98px !important;
@@ -50,11 +55,17 @@
   font-size: 1.5em;
 }
 
+.weird-box-container {
+  margin-bottom: 1em;
+}
+
 .weird-box {
   background-color: #fff;
   padding: 1em;
   border-radius: 15px;
   position: relative;
+  box-sizing: border-box;
+  min-height: 200px;
 }
 .weird-box.box_circle_date .ribbon {
   width: 141px;
@@ -72,6 +83,9 @@
   font-size: 1.1rem;
   line-height: 100%;
 }
+.weird-box.box_circle_photo {
+  margin-left: auto;
+}
 .weird-box.box_circle_photo .ribbon {
   width: 141px;
   height: 177px;
@@ -81,8 +95,16 @@
   z-index: 2;
   text-align: center;
 }
+.weird-box.box_circle_photo .ribbon img {
+  width: auto;
+  height: 103px;
+}
 .weird-box.box_circle_photo .box_content {
   margin: 0;
+  margin-right: 1rem;
+}
+.weird-box.box_circle_photo p {
+  height: auto;
 }
 .weird-box h3 {
   margin: 0.5em 0;
@@ -100,6 +122,26 @@
   grid-template-columns: 0.65fr 1fr;
 }
 
+@media (max-width: 765px) {
+  .weird-box {
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 0px;
+  }
+  .weird-box.box_circle_date .ribbon .ribbon-text {
+    margin: 1.9em 0 0 1em;
+    font-size: 0.7rem;
+  }
+  .weird-box.box_circle_photo .ribbon {
+    text-align: left;
+  }
+  .weird-box.box_circle_photo .ribbon img {
+    height: 60px;
+  }
+  .weird-box .grid-weird-box {
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
 .grid-gap-1em {
   grid-gap: 1em;
 }
