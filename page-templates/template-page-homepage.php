@@ -47,7 +47,7 @@ if ($is_tf_blog_page) die();
                   $content = get_the_content(); echo mb_strimwidth($content, 0, 100, '...');
                   ?>
                 </p>
-                <a class="link-more" href="<?php the_permalink() ?>">Read article</a>
+                <a class="link-more" href="<?php the_permalink() ?>">Read more</a>
                 <?php 
                 // Repeat the process and reset once it hits the limit
                 endwhile; wp_reset_postdata(); ?>

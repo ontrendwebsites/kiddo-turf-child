@@ -33,6 +33,17 @@
   }
 }
 
+.box_thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .box_1 {
 
   .box_content {
@@ -195,8 +206,46 @@
 }
 
 
+// register events table page
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
+.table-wrapper {
+  overflow: auto;
+}
 
+.table {
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  padding:5px;
+  width: 100%;
+  margin-bottom: 2em;
+  white-space: nowrap;
+
+  caption {
+    text-align: left;
+  }
+}
+.table th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+}
+.table td {
+  border:1px solid #C0C0C0;
+  padding:5px;
+}
 
 
 
