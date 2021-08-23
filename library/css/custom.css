@@ -26,6 +26,16 @@
   }
 }
 
+.box_thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box_thumb img {
+  width: 100%;
+  height: auto;
+}
+
 .box_1 .box_content {
   background-position: 0 -101px !important;
   background-size: 960px !important;

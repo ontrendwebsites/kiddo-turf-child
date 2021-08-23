@@ -33,6 +33,17 @@
   }
 }
 
+.box_thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .box_1 {
 
   .box_content {
