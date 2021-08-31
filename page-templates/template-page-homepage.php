@@ -123,7 +123,7 @@ if ($is_tf_blog_page) die();
             <iframe width="560" height="315" src="<?php the_field('main_video'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="video-links">
-            <a href="<?php the_field('video_of_the_week'); ?>" class="btn" hidefocus="true"><strong>Video of the week</strong></a>
+            <?php the_field('video_of_the_week'); ?>
             <a href="<?php the_field('youtube_channel'); ?>" class="btn" hidefocus="true"><strong>Our YouTube Channel</strong></a>
           </div>
         </div>
