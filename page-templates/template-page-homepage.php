@@ -42,12 +42,8 @@ if ($is_tf_blog_page) die();
                 ?>
                 <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
                 <p>
-                  <?php 
-                  // Display the Post Excerpt
-                  $content = get_the_content(); echo mb_strimwidth($content, 0, 100, '...');
-                  ?>
+                  <a class="link-more" href="<?php the_permalink() ?>">Read more</a>
                 </p>
-                <a class="link-more" href="<?php the_permalink() ?>">Read more</a>
                 <?php 
                 // Repeat the process and reset once it hits the limit
                 endwhile; wp_reset_postdata(); ?>
