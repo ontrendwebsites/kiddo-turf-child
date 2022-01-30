@@ -88,11 +88,11 @@
           </div>
           <!-- END SOCIAL ICONS MOBILE -->
 
-          <?php if ( is_front_page() ): ?>
-          <h1 class="mobile-heading">
-            <?php bloginfo( 'name' ); ?>
-            <i class="fas fa-music"></i></h1>
-          <?php endif; ?>
+          <div class="mobile-heading">
+            <img src="https://welcometomusic.net/wp-content/uploads/2022/01/header_mobile_small-cropped.png" />
+            <p>Building Creativity and Confidence through Music</p>
+          </div>
+          
 
           <div class="search">
           <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
