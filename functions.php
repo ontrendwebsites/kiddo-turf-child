@@ -10,7 +10,7 @@ function add_files() {
   // wp_enqueue_script( 'gsap-script', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', array(), '', true );
   // wp_enqueue_script( 'scrollto-script', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js', array(), '', true );
   // wp_enqueue_script( 'scrolltrigger-script', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js', array(), '', true );
-  // wp_enqueue_script( 'fontawesome-script', 'https://kit.fontawesome.com/9e1eea2b17.js', array(), '', true );
+  wp_enqueue_script( 'fontawesome-script', 'https://kit.fontawesome.com/9e1eea2b17.js', array(), '', true );
 
   // wp_enqueue_script( 'remodal-script', get_stylesheet_directory_uri() . '/library/remodal/remodal.min.js', array(), '' );
   // wp_enqueue_script( 'pushy-script', get_stylesheet_directory_uri() . '/library/js/pushy.js', array(), '', true );

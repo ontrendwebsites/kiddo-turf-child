@@ -67,26 +67,36 @@
     <?php if( tfuse_options('clouds_animation', true) ) : ?>
         <div id="top_clouds" class="top_stage"></div>
     <?php endif; ?>
-	<div class="header">
+	    <div class="header">
 		
-		<!-- START SOCIAL ICONS MOBILE -->
-		<div class="social-side">
-			<a href="https://www.facebook.com/search/top/?q=welcome%20to%20music" target="_blank">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/icon-fb-side.svg" style="width:40px" /></a><br />
-			<a href="https://www.youtube.com/channel/UCuk5CHXHUqS4PYYOpXZ0FeQ" target="_blank">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/icon-email-side.svg" style="width:40px" /></a><br />
-			<a href="https://www.youtube.com/channel/UCuk5CHXHUqS4PYYOpXZ0FeQ" target="_blank">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/icon-yt-side.svg" style="width:40px" /></a>
-		</div>
-		<!-- END SOCIAL ICONS MOBILE -->
-		
-		
-            <div class="container">
+        <div class="container">
 
+          <!-- START SOCIAL ICONS MOBILE -->
+          <div class="social-side">
+            <p>Reach out to us on socials or email...</p>
+            <div class="social-side-wrapper">
+              <a class="facebook" href="https://www.facebook.com/search/top/?q=welcome%20to%20music" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="youtube" href="https://www.youtube.com/channel/UCuk5CHXHUqS4PYYOpXZ0FeQ" target="_blank">
+                <i class="fab fa-youtube"></i>    
+              </a>
+              <a class="email" href="mailto:phil@welcometomusic.net" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <!-- END SOCIAL ICONS MOBILE -->
 
-				<div class="search">
-				<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-				</div>
+          <div class="mobile-heading">
+            <img src="https://welcometomusic.net/wp-content/uploads/2022/01/header_mobile_small-cropped.png" />
+            <p>Building Creativity and Confidence through Music</p>
+          </div>
+          
+
+          <div class="search">
+          <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+          </div>
 				
 				<!-- START SOCIAL ICONS DESKTOP -->
 				<div class="social-top">
