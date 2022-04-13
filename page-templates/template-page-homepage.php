@@ -133,56 +133,71 @@ if ($is_tf_blog_page) die();
           </div>
         </div>
 
-        <!-- Begin Mailchimp Signup Form -->
-        <p style="clear: both;"><link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"></p>
-        <div id="mc_embed_signup">
-        <form action="https://welcometomusic.us13.list-manage.com/subscribe/post?u=be91e04d3c840d01ad28a3879&amp;id=dad9fd600c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-          <h2>Subscribe to our newsletter</h2>
-        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-        <div class="mailchimp-form-flex">
-          <div class="mc-field-group">
-            <label for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-MMERGE5">Country/Region</label>
-            <input type="text" value="" name="MMERGE5" class="" id="mce-MMERGE5">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-          </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          </div>
-        </div>
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://welcometomusic.us13.list-manage.com/subscribe/post?u=be91e04d3c840d01ad28a3879&amp;id=dad9fd600c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to our newsletter</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-CITY">City  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="CITY" class="required" id="mce-CITY">
+</div>
+<div class="mc-field-group">
+	<label for="mce-REGION">State/Region  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="REGION" class="required" id="mce-REGION">
+</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-COUNTRY">Country  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="COUNTRY" class="required" id="mce-COUNTRY">
+</div>
+<div class="mc-field-group">
+	<label for="mce-AGETAUGHT">What Age Level Do You Teach?  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="AGETAUGHT" class="required" id="mce-AGETAUGHT">
+</div>
+<div class="mc-field-group">
+	<label for="mce-WORKPLACE">School/Workplace  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="WORKPLACE" class="required" id="mce-WORKPLACE">
+</div>
+	<div id="mce-responses">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be91e04d3c840d01ad28a3879_dad9fd600c" tabindex="-1" value=""></div>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+  </div>
+  <p><a href="https://us13.campaign-archive.com/home/?u=be91e04d3c840d01ad28a3879&id=dad9fd600c" title="View previous campaigns">View previous newsletters.</a></p>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[9]='CITY';ftypes[9]='text';fnames[10]='REGION';ftypes[10]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='COUNTRY';ftypes[5]='text';fnames[6]='AGETAUGHT';ftypes[6]='text';fnames[7]='COMPANY';ftypes[7]='text';fnames[8]='WORKPLACE';ftypes[8]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
 
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be91e04d3c840d01ad28a3879_dad9fd600c" tabindex="-1" value=""></div>
-            <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-        </form>
-        </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
 
 
-
-
-        <div class="content">
-            <div class="boxrow clearfix">
-                <?php 
-                     while ( have_posts() ) : the_post();
-                         tfuse_page_custom_title();
-                         the_content();
-                         break;
-                     endwhile; 
-                 ?>
-            </div>
-            <?php tfuse_comments(); ?>
-        </div>
         <?php if (($sidebar_position == 'right') || ($sidebar_position == 'left')) : ?>
             <div class="sidebar">
                 <?php get_sidebar(); ?>
