@@ -18,7 +18,6 @@ if ($is_tf_blog_page) die();
 <?php endif; ?> 
     <div class="container clearfix page">
         <div class="rocket"></div>
-        <div id="mid_bird"></div>
         <div id="mid_baloon"></div>
         <?php tfuse_header_content('header');?>
         <div class="content_wrapper">

@@ -20,7 +20,6 @@ if ($is_tf_blog_page) die();
 <?php endif; ?> 
     <div class="container clearfix page">
         <div class="rocket"></div>
-        <div id="mid_bird"></div>
         <div id="mid_baloon"></div>
         <?php tfuse_header_content('header');?>
 
@@ -63,7 +62,7 @@ if ($is_tf_blog_page) die();
               if ($image) {
                 echo wp_get_attachment_image( $image, $size );
               } else {
-                echo '<img src="https://welcometomusic.net/wp-content/uploads/2018/06/s-and-p-01-crop.jpg" alt="" width="103" height="103">';  
+                echo '<img loading="lazy" src="https://welcometomusic.net/wp-content/uploads/2018/06/s-and-p-01-crop.jpg" alt="" width="103" height="103">';  
               } ?>
             </div>
             <div class="o-grid grid-weird-box">
@@ -101,7 +100,7 @@ if ($is_tf_blog_page) die();
           ?>
           <div class="box box_<?php echo $count; ?>">
               <div class="box_content">
-                  <div class="box_thumb"><img src="<?php echo esc_url($img['url']); ?>" width="240" height="190" alt=""></div>
+                  <div class="box_thumb"><img loading="lazy" src="<?php echo esc_url($img['url']); ?>" width="240" height="190" alt=""></div>
                   <h3><?php echo $title; ?></h3>
                   <p><?php echo $description; ?></p>
               </div>
@@ -116,8 +115,9 @@ if ($is_tf_blog_page) die();
 
         <div class="c-box-white c-box-white--update o-grid o-grid--2-column">
           <div class="videoWrapper">
-            <iframe width="560" height="315" src="<?php the_field('main_video'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" data-src="<?php the_field('main_video'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+
           <div class="video-links">
             <?php the_field('video_of_the_week'); ?>
             <a href="<?php the_field('youtube_channel'); ?>" class="btn" hidefocus="true"><strong>Our YouTube Channel</strong></a>
@@ -146,42 +146,36 @@ if ($is_tf_blog_page) die();
 	<h2>Subscribe to our newsletter</h2>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+	<label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
 <div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+	<label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
 </div>
 <div class="mc-field-group">
-	<label for="mce-CITY">City  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="CITY" class="required" id="mce-CITY">
+	<label for="mce-CITY">City</label>
+	<input type="text" value="" name="CITY" id="mce-CITY">
 </div>
 <div class="mc-field-group">
-	<label for="mce-REGION">State/Region  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="REGION" class="required" id="mce-REGION">
+	<label for="mce-REGION">State/Region</label>
+	<input type="text" value="" name="REGION" class="" id="mce-REGION">
 </div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+	<label for="mce-EMAIL">Email Address</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
-	<label for="mce-COUNTRY">Country  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="COUNTRY" class="required" id="mce-COUNTRY">
+	<label for="mce-COUNTRY">Country</label>
+	<input type="text" value="" name="COUNTRY" class="" id="mce-COUNTRY">
 </div>
 <div class="mc-field-group">
-	<label for="mce-AGETAUGHT">What Age Level Do You Teach?  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="AGETAUGHT" class="required" id="mce-AGETAUGHT">
+	<label for="mce-AGETAUGHT">What Age Level Do You Teach?</label>
+	<input type="text" value="" name="AGETAUGHT" class="" id="mce-AGETAUGHT">
 </div>
 <div class="mc-field-group">
-	<label for="mce-WORKPLACE">School/Workplace  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="WORKPLACE" class="required" id="mce-WORKPLACE">
+	<label for="mce-WORKPLACE">School/Workplace</label>
+	<input type="text" value="" name="WORKPLACE" class="" id="mce-WORKPLACE">
 </div>
 	<div id="mce-responses">
 		<div class="response" id="mce-error-response" style="display:none"></div>
@@ -190,7 +184,6 @@ if ($is_tf_blog_page) die();
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be91e04d3c840d01ad28a3879_dad9fd600c" tabindex="-1" value=""></div>
     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
   </div>
-  <p><a href="https://us13.campaign-archive.com/home/?u=be91e04d3c840d01ad28a3879&id=dad9fd600c" title="View previous campaigns">View previous newsletters.</a></p>
   </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[9]='CITY';ftypes[9]='text';fnames[10]='REGION';ftypes[10]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='COUNTRY';ftypes[5]='text';fnames[6]='AGETAUGHT';ftypes[6]='text';fnames[7]='COMPANY';ftypes[7]='text';fnames[8]='WORKPLACE';ftypes[8]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>

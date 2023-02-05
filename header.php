@@ -108,6 +108,32 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/icon-email.svg" style="width:40px" /></a>
 				</div>
 				<!-- END SOCIAL ICONS DESKTOP -->
+
+<header>
+  <div class="container">
+    <div class="logo">
+      CSSScript
+    </div>
+    <input class="hamburger-button" type="checkbox" id="hamburger-button" />
+    <label for="hamburger-button">
+      <div></div>
+    </label>
+    <div class="menu">
+      <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="buttons">
+        <a href="#" class="button primary">Login</a>
+        <a href="#" class="button">Settings</a>
+      </div>
+    </div>
+  </div>
+</header>
 				
                 <div class="sunbeam"></div>
 				<?php tfuse_type_logo();?>
